@@ -593,3 +593,85 @@ body {
     bottom: 12px;
   }
   }
+/* ===== CUSTOM BANNER ===== */
+
+.custom-banner {
+  width: 100%;
+  background: linear-gradient(180deg, #8c1d08, #c94f15);
+  padding: 12px 10px;
+  border-bottom: 3px solid #e8b15a;
+}
+
+.banner-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Image */
+.banner-left img {
+  width: 90px;
+  height: auto;
+}
+
+/* Center Text */
+.banner-center {
+  text-align: center;
+  flex: 1;
+}
+
+.banner-center h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.banner-center p {
+  color: #ffe4b5;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Right Diya */
+.banner-right {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.diya {
+  font-size: 2.5rem;
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px orange);
+  }
+  to {
+    filter: drop-shadow(0 0 15px gold);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .banner-left img {
+    width: 60px;
+  }
+
+  .banner-center h1 {
+    font-size: 1.4rem;
+  }
+
+  .banner-center p {
+    font-size: 0.8rem;
+  }
+
+  .diya {
+    font-size: 1.8rem;
+  }
+}
