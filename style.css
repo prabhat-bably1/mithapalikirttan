@@ -793,3 +793,159 @@ body {
 
   text-shadow: 0 0 10px gold;
 }
+/* ===== PREMIUM FLORAL JAGANNATH CORNER DESIGN ===== */
+
+.jagannath-corner-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+
+.jagannath-corner-design {
+  position: relative;
+  width: 180px;
+  height: 150px;
+  border-radius: 28px 0 28px 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 214, 140, 0.22), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255, 228, 180, 0.18);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 10px 28px rgba(0,0,0,0.16);
+  overflow: hidden;
+}
+
+/* floral emojis */
+.flower {
+  position: absolute;
+  filter: drop-shadow(0 0 8px rgba(255, 196, 100, 0.25));
+  animation: flowerFloat 3s ease-in-out infinite alternate;
+}
+
+.flower-1 {
+  top: 10px;
+  left: 10px;
+  font-size: 1.7rem;
+}
+
+.flower-2 {
+  bottom: 10px;
+  left: 20px;
+  font-size: 1.5rem;
+  animation-delay: 0.5s;
+}
+
+.flower-3 {
+  bottom: 18px;
+  right: 16px;
+  font-size: 1.6rem;
+  animation-delay: 1s;
+}
+
+/* Jagannath symbol */
+.jagannath-symbol {
+  position: absolute;
+  top: 34px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.face {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid rgba(255,255,255,0.9);
+  box-shadow: 0 0 12px rgba(255, 224, 163, 0.25);
+}
+
+.face.red {
+  background: #d94a2b;
+}
+
+.face.white {
+  background: #f7f1df;
+}
+
+.face.black {
+  background: #161616;
+}
+
+/* diya */
+.corner-diya {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 8px rgba(255, 190, 80, 0.6));
+  animation: diyaGlowCorner 1.7s ease-in-out infinite alternate;
+}
+
+/* decorative glow */
+.jagannath-corner-design::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom right, rgba(255,255,255,0.05), transparent 45%),
+    radial-gradient(circle at center, rgba(255, 220, 150, 0.08), transparent 50%);
+  pointer-events: none;
+}
+
+@keyframes diyaGlowCorner {
+  from {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 6px rgba(255, 190, 80, 0.45));
+  }
+  to {
+    transform: translateY(-2px) scale(1.05);
+    filter: drop-shadow(0 0 16px rgba(255, 215, 120, 0.9));
+  }
+}
+
+@keyframes flowerFloat {
+  from {
+    transform: translateY(0px) rotate(0deg);
+  }
+  to {
+    transform: translateY(-4px) rotate(3deg);
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .jagannath-corner-wrap {
+    justify-content: center;
+  }
+
+  .jagannath-corner-design {
+    width: 150px;
+    height: 130px;
+  }
+
+  .flower-1,
+  .flower-2,
+  .flower-3 {
+    font-size: 1.3rem;
+  }
+
+  .jagannath-symbol {
+    top: 30px;
+    right: 20px;
+    gap: 6px;
+  }
+
+  .face {
+    width: 22px;
+    height: 22px;
+    border-width: 2px;
+  }
+
+  .corner-diya {
+    font-size: 1.6rem;
+  }
+}
