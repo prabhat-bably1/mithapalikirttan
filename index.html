@@ -13,17 +13,26 @@
 </head>
 <body>
 
-  <!-- Floating Decorations -->
-  <div class="floating floating-1"></div>
-  <div class="floating floating-2"></div>
-  <div class="floating floating-3"></div>
+  <!-- Top Glow -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
   <!-- Header -->
   <header class="top-header">
     <div class="container">
       <div class="header-box">
-        <h1>Mithapali Kirttan Mandali</h1>
-        <p class="organiser">Organiser: Mithapali Gramabasi Brunda</p>
+        <div class="header-left">
+          <img src="images/radha-krishna.png" alt="Radha Krishna" class="rk-img" />
+        </div>
+
+        <div class="header-center">
+          <h1>Mithapali Kirttan Mandali</h1>
+          <p class="organiser">Organiser: Mithapali Gramabasi Brunda</p>
+        </div>
+
+        <div class="header-right">
+          <img src="images/logo.png" alt="Mandali Logo" class="logo-img" />
+        </div>
       </div>
     </div>
   </header>
@@ -32,7 +41,9 @@
   <nav class="navbar">
     <div class="container nav-inner">
       <div class="logo-small">MKM</div>
+
       <button class="menu-toggle" id="menuToggle">☰</button>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -47,25 +58,24 @@
   <section class="hero" id="home">
     <div class="container">
       <div class="hero-card">
-        <div class="hero-text">
-          <span class="tag">Devotional Music • Bhajan • Sankirtan</span>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <div class="diya diya-left">🪔</div>
+          <div class="diya diya-right">🪔</div>
+
+          <span class="hero-tag">Bhajan • Sankirtan • Devotional Gathering</span>
           <h2>Welcome to Mithapali Kirttan Mandali</h2>
           <p>
-            A sacred platform of devotional music, bhajans and spiritual gatherings.
-            This website is dedicated to preserve memories, photos and videos of our
-            kirttan mandali events and community programs.
+            A spiritual platform devoted to bhakti, naam sankirtan, bhajans and
+            cultural devotion. This website is created to share mandali details,
+            memories, programmes, photos and videos.
           </p>
 
           <div class="hero-buttons">
-            <a href="#gallery" class="btn primary-btn">View Gallery</a>
-            <a href="#videos" class="btn secondary-btn">Watch Videos</a>
-          </div>
-        </div>
-
-        <div class="hero-side-box">
-          <div class="hero-placeholder">
-            <span>Main Banner Area</span>
-            <small>You can later add temple / kirttan / mandali image here</small>
+            <a href="#gallery" class="btn primary-btn">Photo Gallery</a>
+            <a href="#videos" class="btn secondary-btn">Video Gallery</a>
           </div>
         </div>
       </div>
@@ -77,21 +87,19 @@
     <div class="container">
       <div class="section-title">
         <h2>About Us</h2>
-        <p>Faith, devotion and community togetherness</p>
+        <p>Faith, music, devotion and village unity</p>
       </div>
 
       <div class="about-card">
         <p>
-          <strong>Mithapali Kirttan Mandali</strong> is a devotional group organised by
-          <strong>Mithapali Gramabasi Brunda</strong>. Our aim is to spread spiritual values,
-          bhakti, peace and cultural heritage through naam sankirtan, bhajans and
-          religious gatherings.
+          <strong>Mithapali Kirttan Mandali</strong> is organised by
+          <strong>Mithapali Gramabasi Brunda</strong>. Our mandali is dedicated to
+          devotional songs, naam sankirtan, spiritual gatherings and cultural service.
         </p>
 
         <p>
-          This website is made to showcase our events, memories, photo gallery,
-          video gallery and contact details, so everyone can stay connected with
-          our mandali activities.
+          This website is made to present our mandali identity in a devotional style,
+          while keeping separate space for uploading our own photos and videos in future.
         </p>
       </div>
     </div>
@@ -102,11 +110,11 @@
     <div class="container">
       <div class="section-title">
         <h2>Photo Gallery</h2>
-        <p>Blank photo boxes — upload your own images</p>
+        <p>Upload your own mandali photos here</p>
       </div>
 
       <div class="upload-note">
-        Click any box below to choose a photo from your device.
+        Blank photo boxes are kept here. You can click and preview your own uploaded images.
       </div>
 
       <div class="photo-grid">
@@ -116,7 +124,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
 
         <label class="photo-box upload-box">
@@ -125,7 +133,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
 
         <label class="photo-box upload-box">
@@ -134,7 +142,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
 
         <label class="photo-box upload-box">
@@ -143,7 +151,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
 
         <label class="photo-box upload-box">
@@ -152,7 +160,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
 
         <label class="photo-box upload-box">
@@ -161,7 +169,7 @@
             <div class="plus">+</div>
             <p>Upload Photo</p>
           </div>
-          <img class="preview-image" alt="Photo Preview">
+          <img class="preview-image" alt="Uploaded Photo Preview">
         </label>
       </div>
     </div>
@@ -172,11 +180,11 @@
     <div class="container">
       <div class="section-title">
         <h2>Video Gallery</h2>
-        <p>Blank video boxes — upload your own videos</p>
+        <p>Upload your own kirtan videos here</p>
       </div>
 
       <div class="upload-note">
-        Click any video box below to choose a video from your device.
+        Blank video boxes are kept here. You can click and preview your own uploaded videos.
       </div>
 
       <div class="video-grid">
@@ -224,7 +232,7 @@
     <div class="container">
       <div class="section-title light-title">
         <h2>Contact Us</h2>
-        <p>Get in touch with Mithapali Kirttan Mandali</p>
+        <p>Connect with Mithapali Kirttan Mandali</p>
       </div>
 
       <div class="contact-card">
@@ -244,7 +252,7 @@
         </div>
 
         <div class="contact-item">
-          <span class="contact-label">Address</span>
+          <span class="contact-label">Place</span>
           <span class="contact-value">Mithapali, Odisha</span>
         </div>
       </div>
@@ -260,4 +268,4 @@
 
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
