@@ -780,3 +780,22 @@ body {
     text-align: center;
   }
 }
+.rk-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+
+  background: linear-gradient(135deg, #8b1c07, #d87a1f);
+  color: #ffd700;
+
+  border: 2px solid rgba(255, 220, 150, 0.5);
+  box-shadow:
+    0 0 0 4px rgba(255, 200, 100, 0.1),
+    0 10px 20px rgba(0,0,0,0.2);
+
+  text-shadow: 0 0 10px gold;
+}
