@@ -1,4 +1,3 @@
-// Mobile Menu
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -6,14 +5,12 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// Close mobile menu after clicking a link
 document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("show");
   });
 });
 
-// Photo Upload Preview
 const photoInputs = document.querySelectorAll(".photo-input");
 
 photoInputs.forEach((input) => {
@@ -35,7 +32,6 @@ photoInputs.forEach((input) => {
   });
 });
 
-// Video Upload Preview
 const videoInputs = document.querySelectorAll(".video-input");
 
 videoInputs.forEach((input) => {
