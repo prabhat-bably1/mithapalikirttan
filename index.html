@@ -7,68 +7,67 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Top Glow -->
   <div class="bg-glow glow-1"></div>
   <div class="bg-glow glow-2"></div>
 
-<!-- Premium Devotional Banner -->
-<header class="custom-banner">
-  <div class="banner-overlay"></div>
+  <!-- ===== PREMIUM SAMBALPURI BANNER ===== -->
+  <header class="sambalpuri-banner">
+    <div class="sambalpuri-strip top-strip"></div>
 
-  <div class="banner-inner">
-    <div class="banner-diya left-diya">🪔</div>
+    <div class="banner-main">
+      <div class="banner-left">
+        <div class="diya diya-left">🪔</div>
 
-    <div class="banner-left">
-      <img src="images/radha-krishna.jpeg" alt="Radha Krishna">
-    </div>
-
-    <div class="banner-center">
-      <div class="title-frame">
-        <h1>Mithapali Kirttan Mandali</h1>
+        <div class="rk-frame">
+          <img src="images/radha-krishna.jpeg" alt="Radha Krishna" class="rk-banner-img">
+        </div>
       </div>
-      <p>Organised by Mithapali Gramabasi Brunda</p>
-      <div class="ornament-line"></div>
+
+      <div class="banner-center">
+        <div class="title-box">
+          <h1>Mithapali Kirttan Mandali</h1>
+          <p>Organised by Mithapali Gramabasi Brunda</p>
+        </div>
+      </div>
+
+      <div class="banner-right">
+        <div class="diya diya-right">🪔</div>
+      </div>
     </div>
 
-    <div class="banner-right">
-      <div class="banner-diya right-diya">🪔</div>
+    <div class="sambalpuri-strip bottom-strip"></div>
+  </header>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="premium-navbar">
+    <div class="container nav-inner">
+      <div class="logo-small">MKM</div>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </div>
-</header>
+  </nav>
 
-<!-- Premium Navbar -->
-<nav class="premium-navbar">
-  <div class="container nav-inner">
-    <div class="logo-small">MKM</div>
-
-    <button class="menu-toggle" id="menuToggle">☰</button>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#videos">Videos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="home">
     <div class="container">
       <div class="hero-card">
-
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
-          <div class="diya diya-left">🪔</div>
-          <div class="diya diya-right">🪔</div>
+          <div class="hero-diya hero-diya-left">🪔</div>
+          <div class="hero-diya hero-diya-right">🪔</div>
 
           <span class="hero-tag">Bhajan • Sankirtan • Devotional Gathering</span>
           <h2>Welcome to Mithapali Kirttan Mandali</h2>
@@ -87,7 +86,7 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ===== ABOUT ===== -->
   <section class="section about-section" id="about">
     <div class="container">
       <div class="section-title">
@@ -110,7 +109,7 @@
     </div>
   </section>
 
-  <!-- Photo Gallery -->
+  <!-- ===== PHOTO GALLERY ===== -->
   <section class="section gallery-section" id="gallery">
     <div class="container">
       <div class="section-title">
@@ -180,7 +179,7 @@
     </div>
   </section>
 
-  <!-- Video Gallery -->
+  <!-- ===== VIDEO GALLERY ===== -->
   <section class="section videos-section" id="videos">
     <div class="container">
       <div class="section-title">
@@ -232,7 +231,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- ===== CONTACT ===== -->
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="section-title light-title">
@@ -264,7 +263,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 Mithapali Kirttan Mandali • Organised by Mithapali Gramabasi Brunda</p>
